@@ -7,14 +7,6 @@
   "background": {
     "service_worker": "background.js"
   },
-  "content_scripts": [
-    {
-      "js": ["content.js"],
-      "matches": [
-        "<all_urls>"
-      ]
-    }
-  ],
   "action": {
     "default_title": "Drink Water Event",
     "default_popup": "popup.html"

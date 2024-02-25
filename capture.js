@@ -1,4 +1,6 @@
-document.getElementById('link').addEventListener('click', captureClick);
+// import { addEvent } from './module.js';
+
+document.getElementById('calendarAdd').addEventListener('click', captureClick);
 
 // function captureClick() {
 //     chrome.deskCapture.chooseDesktopMedia(["tab"], Tab, findString);
@@ -47,7 +49,7 @@ function getDate(str) {
     
     if (match) {
       console.log('Date: ' + match[0]);
-    //   return match[0];
+    //   return addEvent(match[0].split('/')); // should pass method to popupp.js
     } else {
       console.log('No date found. Looking in string format ...');
       // Look for instance of month

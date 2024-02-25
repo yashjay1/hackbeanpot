@@ -11,7 +11,7 @@ function setAlarm(event) {
     window.close();
 }
 
-function addEvent() {
+export function addEvent(date) {
     console.log("in add event");
     const token = gapi.client.getToken();
     if (token !== null) {
