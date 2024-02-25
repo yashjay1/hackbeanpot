@@ -1,8 +1,12 @@
 {
-  "manifest_version": 3,
-  "name": "Reading time",
+  "name": "Drink Water Event Popup",
+  "description": "Demonstrates usage and features of the event page by reminding user to drink water",
   "version": "1.0",
-  "description": "Add the reading time to Chrome Extension documentation articles",
+  "manifest_version": 3,
+  "permissions": ["alarms", "notifications", "storage", "activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
   "content_scripts": [
     {
       "js": ["content.js"],
@@ -12,10 +16,7 @@
     }
   ],
   "action": {
+    "default_title": "Drink Water Event",
     "default_popup": "popup.html"
-  },
-  "permissions": [
-    "activeTab"
-  ]
+  }
 }
-

@@ -1,15 +1,32 @@
+<!DOCTYPE html>
 <html>
- <head>
-   <title>Some Title</title>
-   <script type="stylesheet" href="style.css"></script>
- </head>
- <body>
-    <h1>Some Title</h1>
-    <img src="./stay_hydrated.png" id="hydrateImage">
-    <button id="link" value="true">Scan for items</button>
-     <!-- <button id="min15" value="15">15 Minutes</button>
-     <button id="min30" value="30">30 Minutes</button>
-     <button id="cancelAlarm">Cancel Alarm</button> -->
-   <script src="capture.js"></script>
- </body>
+<head>
+    <title>Water Popup</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #hydrateImage {
+            width: 100px;
+            margin: 5px;
+        }
+
+        button {
+            margin: 5px;
+            outline: none;
+        }
+
+        button:hover {
+            outline: #80deea dotted thick;
+        }
+    </style>
+</head>
+<body>
+<img src="./stay_hydrated.png" id="hydrateImage" />
+<!-- An Alarm delay of less than the minimum 1 minute will fire
+  in approximately 1 minute increments if released -->
+<button id="calendarAdd">Add to Calendar!</button>
+<script src="popupp.js"></script>
+</body>
 </html>
