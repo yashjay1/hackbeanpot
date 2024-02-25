@@ -3,14 +3,6 @@
 // found in the LICENSE file.
 'use strict';
 
-function setAlarm(event) {
-    const minutes = parseFloat(event.target.value);
-    chrome.action.setBadgeText({ text: 'ON' });
-    chrome.alarms.create({ delayInMinutes: minutes });
-    chrome.storage.sync.set({ minutes: minutes });
-    window.close();
-}
-
 function addEvent() {
     console.log("in add event");
     const token = gapi.client.getToken();
